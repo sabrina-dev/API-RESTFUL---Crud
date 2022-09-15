@@ -34,7 +34,7 @@ const User = require('../../models/User')
     try{
       const id = req.params.id;
       await User.findByIdAndDelete(id);
-      res.json({error: false})
+      res.json({msg: "Usuário delatado com sucesso!"})
 
     }catch(err){
       res.json({error: true, message: err.message });
