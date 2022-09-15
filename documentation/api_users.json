@@ -12,9 +12,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{API_LOCAL}}/",
+					"raw": "{{URL}}/",
 					"host": [
-						"{{API_LOCAL}}"
+						"{{URL}}"
 					],
 					"path": [
 						""
@@ -33,7 +33,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user_type\": \"admin\",\n    \"name\": \"sasa\",\n    \"email\": \"sasa\",\n    \"password\": \"sasa\",\n    \"confirmpassword\":\"sasa\",\n    \"age\": \"21\"\n    \n}",
+					"raw": "{\n    \"user_type\": \"cliente\",\n    \"name\": \"frs\",\n    \"email\": \"samaretrea@gmail.com\",\n    \"password\": \"do\",\n    \"confirmpassword\":\"do\",\n    \"age\": \"20\"\n    \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,20 +106,20 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{URL}}/user/63232222b382bc7a4768651d",
+					"raw": "{{URL}}/user/6323458587b6959f80372139",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"user",
-						"63232222b382bc7a4768651d"
+						"6323458587b6959f80372139"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Update User for ID",
+			"name": "Update User",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -134,23 +134,22 @@
 				"method": "PUT",
 				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "samugooo",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\n    \"user_type\": \"cliente\",\n    \"name\": \"PPPPP\",\n    \"email\": \"samaretrea@gmail.com\",\n    \"password\": \"do\",\n    \"confirmpassword\":\"do\",\n    \"age\": \"20\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
-					"raw": "{{URL}}/user/63235db6c580a3c4342673fc",
+					"raw": "{{URL}}/user/6323b1f12ee0840712bdde35",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"user",
-						"63235db6c580a3c4342673fc"
+						"6323b1f12ee0840712bdde35"
 					]
 				}
 			},
@@ -172,17 +171,22 @@
 				"method": "DELETE",
 				"header": [],
 				"body": {
-					"mode": "formdata",
-					"formdata": []
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "{{URL}}/user/63232222b382bc7a4768651d",
+					"raw": "{{URL}}/user/6323b066d8b9aa60d697cb05",
 					"host": [
 						"{{URL}}"
 					],
 					"path": [
 						"user",
-						"63232222b382bc7a4768651d"
+						"6323b066d8b9aa60d697cb05"
 					]
 				}
 			},
