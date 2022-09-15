@@ -1,6 +1,7 @@
 # BLUELOGIC SISTEMAS - APIRESTFUL
 
-Welcome to the APIRESTFUL.
+Bem vindo á APIRESTFUL.
+
 ### API de CRUD de usuários
 
 ### Tecnologias usadas:
@@ -14,7 +15,7 @@ Welcome to the APIRESTFUL.
 ## Instruções para executar o projeto
 
 ### Documentação em Postman dos endpoints
-https://#
+https://raw.githubusercontent.com/sabrina-dev/API-RESTFUL---Crud/main/README.md
 
 ### Usando docker (opção 1)
 A imagem do docker gera um container com o projeto

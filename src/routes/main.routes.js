@@ -5,7 +5,7 @@ const User = require('../../models/User')
 
 // Private Routes
 
-  //list registers
+  // List registers
   router.get('/user/', checkToken, async (req, res)=> {
     try{
       const users = await User.find({});
@@ -15,7 +15,7 @@ const User = require('../../models/User')
     }
   });
 
-  // atualizar usuario
+  // Update user
   router.put('/user/:id', checkToken, async (req,res)=> {
     try{
       const id = req.params.id;
@@ -29,7 +29,7 @@ const User = require('../../models/User')
     }
   });
 
-  //deletar usuario
+  // Delete user
   router.delete('/user/:id', checkToken, async (req,res)=>{
     try{
       const id = req.params.id;
@@ -41,7 +41,7 @@ const User = require('../../models/User')
     }
   })
 
-  // informações do user
+  // User information
   router.get("/user/:id", checkToken, async (req, res) => {
     const id = req.params.id;
 
